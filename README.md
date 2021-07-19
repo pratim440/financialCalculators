@@ -1,7 +1,23 @@
 ## Installation
 
 ```
-npm i financialCalculators
+npm i financialcalculators
+```
+
+## Usage
+
+```
+const calc = require('financialcalculators')
+const result = calc.sipCalculator(1000,12,5);
+console.log(result);
+```
+
+OR
+
+```
+const {sipCalculator} = require('financialcalculators')
+const result = sipCalculator(1000,12,5);
+console.log(result);
 ```
 
 ## Terminologies
@@ -47,9 +63,9 @@ npm i financialCalculators
    returns Absolute returns value in percentage
 1. **emiCalculator(p,r,n)**
    returns an object {emi, totalInterest, totalPayment}
-1. **gstExclusiveCalculaor(amount,gstRate)**
+1. **gstExclusiveCalculator(amount,gstRate)**
    returns an object {gst, postGSTAmount}
-1. **gstInclusiveCalculaor(amount,gstRate)**
+1. **gstInclusiveCalculator(amount,gstRate)**
    returns an object {gst, preGSTAmount}
 1. **inflationFutureValueCalculator(p,r,n)**
    returns future value of inflation

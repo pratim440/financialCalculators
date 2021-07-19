@@ -127,12 +127,12 @@ const emiCalculater = (p, r, n) => {
   return { emi, totalInterest: emi * n - p, totalPayment: emi * n };
 };
 
-const gstExclusiveCalculaor = (amount, gstRate) => {
+const gstExclusiveCalculator = (amount, gstRate) => {
   const gst = (amount * gstRate) / 100;
   return { gst: gst.toFixed(2), postGSTAmount: (amount + gst).toFixed(2) };
 };
 
-const gstInclusiveCalculaor = (amount, gstRate) => {
+const gstInclusiveCalculator = (amount, gstRate) => {
   const preGSTAmount = (amount * gstRate) / (100 + gstRate);
   return {
     preGSTAmount: (amount - preGSTAmount).toFixed(2),
@@ -227,5 +227,32 @@ const childEducationCalculator = (currAge, highAge, r, cost, infRate) => {
   const inf = inflationFutureValueCalculator(cost, infRate, highAge - currAge);
   return goalSipCalculator(inf, r, highAge - currAge);
 };
-const ans = childEducationCalculator(5, 18, 12, 100000, 6);
-console.log(ans);
+
+module.exports = {
+  sipCalculator,
+  lumpsumCalculator,
+  goalLumpsumCalculator,
+  goalSipCalculator,
+  timeDurationLumpsum,
+  timeDurationSip,
+  swpCalculator,
+  ssyCalculator,
+  investmentPlanner,
+  cagrReturnCalculator,
+  absoluteReturnCalculator,
+  emiCalculater,
+  gstExclusiveCalculator,
+  gstInclusiveCalculator,
+  inflationFutureValueCalculator,
+  inflationRateCalculator,
+  ruleOf72,
+  ppfCalculator,
+  liquidityRatio,
+  budgetCalculator,
+  simpleInterestCalculator,
+  compundInterestCalculator,
+  retirementCalculator,
+  fdCalculator,
+  rdCalculator,
+  childEducationCalculator,
+};

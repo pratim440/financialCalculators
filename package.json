@@ -1,0 +1,26 @@
+{
+  "name": "financialcalculators",
+  "version": "1.0.1",
+  "description": "NPM Module that contains all basic financial calculators.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratim440/financialCalculators.git"
+  },
+  "keywords": [
+    "calculators",
+    "financialcalculator",
+    "allinonecalculator",
+    "finance",
+    "investmentcalculator"
+  ],
+  "author": "Pratim Chakraborty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratim440/financialCalculators/issues"
+  },
+  "homepage": "https://github.com/pratim440/financialCalculators#readme"
+}
